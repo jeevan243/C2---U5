@@ -101,6 +101,7 @@ export const Rentals = ({}) => {
                 <td className="rent">{house.rent}</td>
                 <td className="preferredTenants">
                   {/* Show text Both or Bachelors or Married based on values */}
+                  {house.tenent}
                 </td>
                 <td className="houseImage">
                   <img src={house.image} alt="house" />
