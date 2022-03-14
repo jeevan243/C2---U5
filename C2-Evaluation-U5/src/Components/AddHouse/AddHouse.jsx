@@ -13,7 +13,7 @@ export const AddHouse = () => {
     tenent: "",
   };
   const [formdata, setFormdata] = useState(obj);
-  const [getDatadb, setgetDatadb] = useState([]);
+  // const [getDatadb, setgetDatadb] = useState([]);
 
   const handleChange = (e) => {
     const tenent =
@@ -32,9 +32,9 @@ export const AddHouse = () => {
 
   //useeffect
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   //server
   const handleSubmit = (e) => {
@@ -48,11 +48,7 @@ export const AddHouse = () => {
 
   //getdata
 
-  const getData = () => {
-    axios.get("http://localhost:8080/houses").then((res) => {
-      setgetDatadb(res.data);
-    });
-  };
+
   return (
     <>
       <div className="addHouseContainer">
