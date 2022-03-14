@@ -1,0 +1,13 @@
+{
+  "houses": [
+    {
+      "name": "sdsd",
+      "ownerName": "dsdsd",
+      "address": "sdasdas",
+      "areaCode": "6656",
+      "rent": "645646",
+      "tenent": "bachelor",
+      "id": 1
+    }
+  ]
+}
