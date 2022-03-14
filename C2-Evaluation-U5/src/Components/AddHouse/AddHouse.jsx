@@ -132,7 +132,7 @@ export const AddHouse = () => {
         </form>
       </div>
 
-      <Rentals getDatadb={getDatadb} />
+      {/* <Rentals getDatadb={getDatadb} /> */}
     </>
   );
 };

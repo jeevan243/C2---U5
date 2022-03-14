@@ -1,6 +1,6 @@
 import "./Rentals.css";
 
-export const Rentals = ({ getDatadb }) => {
+export const Rentals = ({  }) => {
   return (
     <div className="rentalContainer">
       <div className="sortingButtons">
@@ -29,20 +29,20 @@ export const Rentals = ({ getDatadb }) => {
           </tr>
         </thead>
         <tbody>
-          {[].map((house, index) => {
+          {[].map((houses, index) => {
             return (
-              <tr key={house.id} className="houseDetails">
-                <td className="houseId">{house.id}</td>
-                <td className="houseName">{house.name} </td>
-                <td className="ownersName">{house.ownerName}</td>
-                <td className="address">{house.address}</td>
-                <td className="areaCode">{house.areaCode}</td>
-                <td className="rent">{house.rent}</td>
+              <tr key={houses.id} className="houseDetails">
+                <td className="houseId">{houses.id}</td>
+                <td className="housesName">{houses.name} </td>
+                <td className="ownersName">{houses.ownerName}</td>
+                <td className="address">{houses.address}</td>
+                <td className="areaCode">{houses.areaCode}</td>
+                <td className="rent">{houses.rent}</td>
                 <td className="preferredTenants">
                   {/* Show text Both or Bachelors or Married based on values */}
                 </td>
                 <td className="houseImage">
-                  <img src={house.image} alt="house" />
+                  <img src={houses.image} alt="house" />
                 </td>
               </tr>
             );
