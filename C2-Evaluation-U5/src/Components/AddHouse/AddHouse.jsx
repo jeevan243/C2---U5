@@ -32,9 +32,9 @@ export const AddHouse = () => {
 
   //useeffect
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    return () => {};
+  }, []);
 
   //server
   const handleSubmit = (e) => {
@@ -47,7 +47,6 @@ export const AddHouse = () => {
   };
 
   //getdata
-
 
   return (
     <>

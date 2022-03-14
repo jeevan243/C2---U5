@@ -8,6 +8,8 @@ export const Rentals = ({}) => {
 
   useEffect(() => {
     getData();
+
+    return () => {};
   }, []);
 
   const getData = () => {
@@ -15,14 +17,59 @@ export const Rentals = ({}) => {
       setgetDatadb(res.data);
     });
   };
+
+  //
+  const sortById = () => {
+    getDatadb.sort(function (a, b) {
+      return b.id - a.id;
+    });
+    setgetDatadb(...getDatadb);
+  };
+  const sortByAsc = () => {
+    getDatadb.sort(function (a, b) {
+      return a.rent - b.rent;
+    });
+    setgetDatadb([...getDatadb]);
+  };
+  const sortByDesc = () => {
+    getDatadb.sort(function (a, b) {
+      return b.rent - a.rent;
+    });
+    setgetDatadb([...getDatadb]);
+    //  console.log(data);
+  };
+  const sortAreaAsc = () => {
+    getDatadb.sort(function (a, b) {
+      return a.areaCode - b.areaCode;
+    });
+    setgetDatadb([...getDatadb]);
+  };
+  const sortByAreaDsc = () => {
+    getDatadb.sort(function (a, b) {
+      return b.areaCode - a.areaCode;
+    });
+    setgetDatadb([...getDatadb]);
+  };
+
+  //
   return (
     <div className="rentalContainer">
       <div className="sortingButtons">
-        <button className="sortById">Sort by ID</button>
-        <button className="sortByRentAsc">Rent Low to high</button>
-        <button className="sortByRentDesc">Rent High to low</button>
-        <button className="sortByAreaAsc">Area Low to high</button>
-        <button className="sortByAreaDesc">Area High to Low</button>
+        <button className="sortById" onClick={sortById}>
+          Sort by ID
+        </button>
+        <button className="sortByRentAsc" onClick={sortByAsc}>
+          Rent Low to high
+        </button>
+        <button className="sortByRentDesc" onClick={sortByDesc}>
+          Rent High to low
+        </button>
+        <button className="sortByAreaAsc" onClick={sortAreaAsc}>
+          Area Low to high
+        </button>
+        <button className="sortByAreaDesc" onClick={sortByAreaDsc}>
+          Area High to Low
+        </button>
       </div>
       <input
         className="searchAddress"
