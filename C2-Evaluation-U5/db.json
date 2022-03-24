@@ -35,6 +35,25 @@
       "rent": "10000",
       "preferred_tenants": "married",
       "id": 4
+    },
+    {
+      "name": "divya",
+      "ownerName": "jeevan",
+      "address": "korutla",
+      "areaCode": "5013456",
+      "rent": "50000000",
+      "tenent": "marred",
+      "image": "https://5.imimg.com/data5/ANDROID/Default/2021/2/LP/UY/YF/123847091/product-jpeg-500x500.jpg",
+      "id": 5
+    },
+    {
+      "name": "Jeevan Prasad",
+      "ownerName": "idshd",
+      "address": "bethamcherla",
+      "areaCode": "54545",
+      "rent": "45545",
+      "tenent": "bachelor",
+      "id": 6
     }
   ]
 }

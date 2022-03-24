@@ -42,7 +42,7 @@ export const AddHouse = () => {
 
     axios.post("http://localhost:8080/houses", formdata).then(() => {
       alert("Data saved successfully");
-      getData();
+     
     });
   };
 
