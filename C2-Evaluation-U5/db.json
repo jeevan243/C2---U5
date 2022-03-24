@@ -54,6 +54,15 @@
       "rent": "45545",
       "tenent": "bachelor",
       "id": 6
+    },
+    {
+      "name": "kranth",
+      "ownerName": "idshd",
+      "address": "ramadugu",
+      "areaCode": "554545",
+      "rent": "458545",
+      "tenent": "bachelor",
+      "id": 7
     }
   ]
 }
