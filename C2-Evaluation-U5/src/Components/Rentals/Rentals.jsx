@@ -94,7 +94,7 @@ export const Rentals = ({}) => {
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
-                <td className="housesName">{house.name} </td>
+                <td className="houseName">{house.name} </td>
                 <td className="ownersName">{house.ownerName}</td>
                 <td className="address">{house.address}</td>
                 <td className="areaCode">{house.areaCode}</td>
