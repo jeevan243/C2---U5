@@ -3,13 +3,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 
-export const Rentals = ({}) => {
+export const Rentals = () => {
   const [getDatadb, setgetDatadb] = useState([]);
 
   useEffect(() => {
     getData();
-
-    return () => {};
   }, []);
 
   const getData = () => {
