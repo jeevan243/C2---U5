@@ -19,11 +19,11 @@ export const Rentals = ({}) => {
   };
 
   //
-  const sortById = () => {
+  const sortbyId = () => {
     getDatadb.sort(function (a, b) {
       return b.id - a.id;
     });
-    setgetDatadb(...getDatadb);
+    setgetDatadb([...getDatadb]);
   };
   const sortByAsc = () => {
     getDatadb.sort(function (a, b) {
@@ -55,7 +55,7 @@ export const Rentals = ({}) => {
   return (
     <div className="rentalContainer">
       <div className="sortingButtons">
-        <button className="sortById" onClick={sortById}>
+        <button className="sortById" onClick={sortbyId}>
           Sort by ID
         </button>
         <button className="sortByRentAsc" onClick={sortByAsc}>
